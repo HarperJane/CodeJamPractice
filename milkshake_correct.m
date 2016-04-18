@@ -19,9 +19,6 @@ while count_C < C
         
         customer(i).T = S(1);
         customer(i).flavors = reshape(S(2:end), 2, S(1));
-        if count_C == 70
-            disp(S);
-        end;
     end;
     
     malted = zeros(1,N);
@@ -59,7 +56,7 @@ while count_C < C
         stat = strjoin({stat, 'IMPOSSIBLE'}, ' ');
     end;
     
-%     disp(stat);
+    disp(stat);
     fprintf(fid, stat);
     fprintf(fid, '\n');
 end;
